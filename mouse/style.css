@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; 
+}
+
+section {
+    height: 100vh;
+    background: url(../Images/serf.jpg) no-repeat center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1 {
+    position: relative;
+    padding: 0 0 40px 0;
+    max-width: 1200px;
+    font-size: 16em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: .6em;
+    color: #000;
+    background: #fff;
+    mix-blend-mode: screen;
+}
+section h1 span {
+    font-size: .5em
+}

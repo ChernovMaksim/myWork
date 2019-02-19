@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Knockout Text With Mousemove Effects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1><span>Place your</span> text <span> Here</span></h1>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $("section").mousemove(function(e) {
+        var moveX = (e.pageX * -3/10);
+        var moveY = (e.pageY * -3/10);
+        $(this).css("background-position", moveX + "px " + moveY + "px");
+      });
+    </script>
+  </body>
+</html>
