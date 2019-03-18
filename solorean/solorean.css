@@ -1,0 +1,225 @@
+body   {
+    /*position: relative;*/
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Arial;
+    
+}
+.home-header {
+
+    background-image: url("bg.jpg");
+    margin: 0 auto;
+    padding: 0;
+    background-color: #3a464b;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.logo {
+    display: inline-block;
+    font-size: 21px;
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    margin-left: 60px;
+
+}
+
+li {
+    display: inline-block;
+
+
+}
+li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+    white-space: nowrap;
+
+
+}
+li a:hover {
+    background: #1abc9c;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+li:last-child {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+.title {
+    width: 725px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.title span {
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.title p {
+
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.title a {
+    background: #1abc9c;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.title a:hover {
+    background-color: #17a68a;
+}
+
+.contant {
+    width: 1000px;
+    height: 400px;
+    margin: 50px auto 0 auto;
+
+
+}
+
+.c-tutorial {
+    width: 300px;
+    height: 333px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.45);
+    border-radius: 5px;
+}
+
+.python-tutorial,
+.java-tutorial {
+    width: 300px;
+    height: 333px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.45);
+    border-radius: 5px;
+    margin-left: 26px;
+
+}
+
+
+.icon img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3a464b;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1abc9c;
+    border: medium none;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.btn:hover {
+    background-color: #17a68a;
+}
+
+.link {
+    text-align: center;
+    text-decoration: none;
+    color: #17a68a;
+    margin-bottom: 25px;
+}
+.link a {
+    text-decoration: none;
+    color: #17a68a;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.link a:hover {
+    border-bottom: 2px solid #17a68a;
+}
+
+
+.container {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg,#414e53 70%,#3a464b 30%);
+}
+.info-num {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 600px;
+}
+.info-num p {
+    float: left;
+    color: #d6d6d6;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.info-num span {
+    font-weight: bold;
+    font-size: 2em;
+    color: #8bc34a;
+}
+
+.info-img {
+    width: 600px;
+    margin: 0 auto;
+    display: inline-block;
+}
