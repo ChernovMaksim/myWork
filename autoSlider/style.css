@@ -1,0 +1,23 @@
+#slider {
+    width: 450px;
+    height: 150px;
+    border: 5px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+}
+img {
+    float: left;
+    margin-left: 5px;
+    
+}
+#strip {
+    width: 950px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+#strip::after{
+    content: "";
+    display: block;
+    clear: both;
+}
