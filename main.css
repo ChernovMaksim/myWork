@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+body {
+  width: 940px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  width: 250px;
+  margin-top: 65px;
+  margin-left: 250px;
+}
+
+.name a {
+  color: rgb(0, 0, 0, 0.8);
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search {
+  position: absolute;
+  top: 55px;
+  right: 250px;
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+.search:hover > .search-btn{
+  background: #fff;
+}
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0;
+}
+.all_works {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.works {
+  display: inline-block;
+  margin-top: 10px;
+}
+.job {
+  margin: 10px;
+}
+.bg {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  display: inline-block;
+}
+.bg:hover {
+  background: rgba(240, 236, 236, 0.5);
+}
+
+.block180 {
+  width: 180px;
+}
+
+.nav {
+  background: rgb(0, 0, 0, 0.8);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav ul li a {
+  color: rgb(153, 153, 156);
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+}
+
+
+.inc {
+  margin: 25px auto 40px;
+  text-align: center;
+  color: rgb(153, 153, 156);
+  font-size: 12px;
+}
