@@ -21,7 +21,7 @@ a {
 }
 
 .name a {
-  color: rgb(0, 0, 0, 0.8);
+  color: rgba(230, 25, 25, 0.8);
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
