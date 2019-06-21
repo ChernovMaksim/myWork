@@ -7,3 +7,9 @@ $database = "test";
 
 
 $link = mysqli_connect($host, $user, $password, $database);
+
+?>
+
+<ul>
+    <li>list</li>
+</ul>
