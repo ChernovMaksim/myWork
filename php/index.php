@@ -16,6 +16,7 @@ $link = mysqli_connect($host, $user, $password, $database);
     <li>list</li>
     <li>list</li> <li>list</li>
     <li>list</li> <li>list</li>
-    <li>list</li> <li>list</li>
+    <li>list</li> 
+    
     <li>list</li>
 </ul>
