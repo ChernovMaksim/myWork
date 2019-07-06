@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.social {
+    position: relative;
+
+    ul {
+        position: fixed;
+        right: 0;
+        top: 150px;
+        list-style: none;
+        text-align: center;
+
+        li {
+            padding: 20px;
+
+            a {
+                color: #000000;
+            }
+
+        }
+    }
+}
+
+.header {
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    height: 80px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    nav {
+        width: 1120px;
+        margin: 0 auto;
+
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            padding-top: 17px;
+
+            li {
+                padding: 10px;
+                cursor: pointer;
+                transition: .5s;
+
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+            }
+
+            li:hover {
+                a {
+                    color: #8b8888;
+
+                }
+            }
+
+
+            li:last-child {
+                border: 1px solid #fff;
+                padding: 10px 20px;
+
+
+                a {
+                    text-transform: none;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+            }
+
+            li:last-child:hover {
+                background: #ffffff;
+
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+#ui-datepicker-div {
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+    border: 1px solid #8b8888;
+    opacity: .7;
+    width: 196px;
+
+    .ui-datepicker-title {
+        border-bottom: 1px solid #000000;
+        padding: 10px;
+    }
+
+    .ui-datepicker-prev {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+    .ui-datepicker-next {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .ui-datepicker-calendar {
+        margin: 10px 0 10px 10px;
+        
+    }
+
+    td {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000000;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .ui-datepicker-other-month {
+        border: none;
+    }
+
+    a {
+        cursor: pointer;
+        color: #000000;
+    }
+
+    span {
+        font-size: 14px;
+        padding: 2px;
+        color: #000000;
+    }
+}
+
+.cnt {
+    width: 100%;
+
+    .rooms {
+        width: 920px;
+        margin: 150px auto 50px auto;
+
+        h4 {
+            font-size: 22px;
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            input {
+                padding: 10px 27px;
+                text-align: center;
+                outline: none;
+
+            }
+
+            button {
+                padding: 10px 51px;
+                color: #ffffff;
+                background: #000000;
+                font-size: 16px;
+            }
+        }
+
+        .room {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+
+            .room-img {
+                position: relative;
+
+                a {
+                    color: #ffffff;
+                    text-align: center;
+                }
+
+                a::before {
+                    content: '';
+                    position: absolute;
+                    background: #000000;
+                    opacity: .5;
+                    width: 90px;
+                    height: 5px;
+                    top: 160px;
+                    left: 160px;
+                }
+
+                a:hover::before {
+                    content: 'О номере';
+                    height: 25px;
+                    top: 140px;
+                    transition: .5s;
+                    font-size: 14px;
+                    font-weight: bold;
+
+                }
+
+                
+            }
+
+
+            .room-info {
+                position: relative;
+                width: 500px;
+                height: 125px;
+
+                a {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #000000;
+                    position: absolute;
+                    top: -28px;
+                    left: 0;
+                }
+
+                p {
+                    font-family: italic;
+                    color: #000000;
+                    opacity: .5;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                ul {
+                    margin-bottom: 10px;
+                    margin-left: 17px;
+
+                    li {
+                        font-family: italic;
+                        color: #000000;
+                        opacity: .5;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .icon {
+                margin-top: 5px;
+
+                i {
+                    margin: 5px;
+                }
+            }
+
+            .room-price {
+                text-align: center;
+                width: 100px;
+                height: 150px;
+
+                p {
+                    font-size: 12px;
+                    color: #000000;
+                    padding-bottom: 24px;
+
+                }
+
+                h4 {
+                    font-size: 30px;
+                    color: #000000;
+                    padding-bottom: 24px;
+                    font-weight: normal;
+                }
+
+                a {
+                   padding: 10px 12px;
+                    color: #ffffff;
+                    background: #000000;
+                    font-size: 16px;
+                    
+                }
+            }
+        }
+    }
+    .contact {
+        background: rgb(245, 245, 245);
+        width: 100%;
+        padding-top: 90px;
+
+        .contact-form {
+            width: 900px;
+            margin: 0 auto;
+            text-align: center;
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 24px;
+                color: #000000;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+
+                .text {
+                    font-family: italic;
+                    color: #000000;
+                    opacity: .5;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                }
+
+                .text::after {
+                    content: '/';
+                    margin-left: 70px;
+                    position: absolute;
+                }
+
+                .text:last-child::after {
+                    content: '';
+                }
+            }
+
+            form {
+                width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: 50px;
+
+                input {
+                    width: 250px;
+                    padding: 10px 15px;
+                    border: none;
+                    font-size: 18px;
+                    
+                }
+                input::placeholder {
+                    padding: 8px;
+                 }
+
+                textarea {
+                    width: 535px;
+                    padding: 10px 15px;
+                    height: 150px;
+                    border: none;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    resize: none;
+                }
+                textarea::placeholder {
+                    padding: 8px;
+                }
+
+                .field-block {
+                    float: left;
+                    margin-left: 40px;
+                    margin-top: 30px;
+                    
+
+                    input {
+                        width: 30px;
+                    }
+
+                    .check-text {
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                }
+                button {
+                    width: 565px;
+                    border: none;
+                    padding: 10px 5px;
+                    color: #ffffff;
+                    background: #000000;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 30px;
+                }
+            }
+
+        }
+    }
+}

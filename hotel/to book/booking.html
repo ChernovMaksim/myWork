@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#datepicke").datepicker();
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="social">
+        <ul>
+            <li><a target="_blank" href="https://www.vk.com"><i class="fab fa-vk fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.tripadvisor.ru/"><i class="fab fa-tripadvisor fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="../hotel.html">главная</a></li>
+                <li><a href="../hotel.html#hotel">отель</a></li>
+                <li><a href="../hotel.html#rooms">номера</a></li>
+                <li><a href="../hotel.html#service">услуги</a></li>
+                <li><a href="../hotel.html#gallery">галерея</a></li>
+                <li><a href="../hotel.html#walks">куда пойти</a></li>
+                <li><a href="#contact">контакты</a></li>
+                <li><a href="#">Забронировать</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cnt">
+        <div class="rooms">
+            <h4>Наши номера</h4>
+            <hr>
+
+            <form action="">
+                    <input type="text" required id="datepicker" autocomplete="off" placeholder="Заезд">
+                    <input type="text" required id="datepicke" autocomplete="off" placeholder="Выезд">
+                    <input type="number" required id="number" autocomplete="off" placeholder="Взрохлых">
+                    <input type="number" required id="number" autocomplete="off" placeholder="Детей">
+                <button>Подобрать</button>
+            </form>
+            <hr>
+
+            <div class="room junior">
+                <div class="room-img">
+                    <a href="../room/room.html"><img src="./img/junior1.jpg" alt="" width="250px" height="166px"></a>
+                </div>
+                <div class="room-info">
+                    <a href="#">Полулюкс</a>
+                    <p>Из наших полулюксов вы увидите захватывающую <br>
+                        панораму города.</p>
+                    <ul>
+                        <li>
+                            Площадь: 260 кв. фт
+                        </li>
+                        <li>
+                            Кровати: полутороспальных 2
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="icon">
+                        <i class="far fa-snowflake fa-2x" alt="red"></i>
+                        <i class="fas fa-wifi fa-2x"></i>
+                        <i class="fas fa-tv fa-2x"></i>
+                        <i class="fas fa-user-shield fa-2x"></i>
+                        <i class="fas fa-glass-cheers fa-2x"></i>
+                        <i class="fas fa-phone fa-2x"></i>
+                        <i class="fas fa-hamburger fa-2x"></i>
+                        <i class="fas fa-shower fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="room-price">
+                    <p>от</p>
+                    <h4>$250</h4>
+                    <a href="../room/room.html">О номере</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="room standard">
+                <div class="room-img">
+                    <a href="../room/room.html"><img src="./img/standart.jpg" alt="" width="250px" height="166px"></a>
+                </div>
+                <div class="room-info">
+                    <a href="#">Стандартный</a>
+                    <p>Из наших полулюксов вы увидите захватывающую <br>
+                        панораму города.</p>
+                    <ul>
+                        <li>
+                            Площадь: 260 кв. фт
+                        </li>
+                        <li>
+                            Кровати: полутороспальных 2
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="icon">
+                        <i class="far fa-snowflake fa-2x" alt="red"></i>
+                        <i class="fas fa-wifi fa-2x"></i>
+                        <i class="fas fa-tv fa-2x"></i>
+                        <i class="fas fa-user-shield fa-2x"></i>
+                        <i class="fas fa-glass-cheers fa-2x"></i>
+                        <i class="fas fa-phone fa-2x"></i>
+                        <i class="fas fa-hamburger fa-2x"></i>
+                        <i class="fas fa-shower fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="room-price">
+                    <p>от</p>
+                    <h4>$150</h4>
+                    <a href="../room/room.html">О номере</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="room luxy">
+                <div class="room-img">
+                    <a href="#"><img src="./img/luxy.jpg" alt="" width="250px" height="166px"></a>
+                </div>
+                <div class="room-info">
+                    <a href="../room/room.html">Люкс</a>
+                    <p>Из наших полулюксов вы увидите захватывающую <br>
+                        панораму города.</p>
+                    <ul>
+                        <li>
+                            Площадь: 260 кв. фт
+                        </li>
+                        <li>
+                            Кровати: полутороспальных 2
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="icon">
+                        <i class="far fa-snowflake fa-2x" alt="red"></i>
+                        <i class="fas fa-wifi fa-2x"></i>
+                        <i class="fas fa-tv fa-2x"></i>
+                        <i class="fas fa-user-shield fa-2x"></i>
+                        <i class="fas fa-glass-cheers fa-2x"></i>
+                        <i class="fas fa-phone fa-2x"></i>
+                        <i class="fas fa-hamburger fa-2x"></i>
+                        <i class="fas fa-shower fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="room-price">
+                    <p>от</p>
+                    <h4>$350</h4>
+                    <a href="../room/room.html">О номере</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <section id="contact" class="contact">
+
+            <div class="contact-form">
+                <h4>свяшитесь с нами</h4>
+                <div class="contact-info">
+                    <a class="text" href="#">info@mysite.com</a>
+                    <span class="text">Ул.Арбат, 1а, Москва, 119019, Россия</span>
+                    <span class="text">+79031597393</span>
+                </div>
+                <form id="contactForm" action="" method="post">
+                    <input id="name" class="field" name="name" required type="text" placeholder="Name *">
+                    <input id="email" class="field" name="email" required type="email" placeholder="Email *">
+                    <textarea id="message" class="field" name="message" rows="4" placeholder="Messeges"></textarea>
+                    <div class="field-block">
+                        <input id="check" name="check" checked type="checkbox">
+                        <span class="check-text">Я добровольно отправляю свои данные</span>
+                    </div>
+                    <button id="button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5dba33352fe3735d04486f5b775f9d31c04a98fe60b748c431da165708b34877&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </section>
+    </div>
+
+</body>
+
+</html>

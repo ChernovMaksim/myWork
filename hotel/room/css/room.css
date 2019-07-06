@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social {
+  position: relative;
+}
+
+.social ul {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  list-style: none;
+  text-align: center;
+}
+
+.social ul li {
+  padding: 20px;
+}
+
+.social ul li a {
+  color: #000000;
+}
+
+.header {
+  width: 100%;
+  background: #000000;
+  position: fixed;
+  height: 80px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header nav {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 17px;
+}
+
+.header nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.header nav ul li:hover a {
+  color: #8b8888;
+}
+
+.header nav ul li:last-child {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+
+.header nav ul li:last-child a {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header nav ul li:last-child:hover {
+  background: #ffffff;
+}
+
+.header nav ul li:last-child:hover a {
+  color: #000000;
+}
+
+#ui-datepicker-div {
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+  border: 1px solid #8b8888;
+  opacity: .7;
+  width: 196px;
+}
+
+#ui-datepicker-div .ui-datepicker-title {
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+}
+
+#ui-datepicker-div .ui-datepicker-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar {
+  margin: 10px 0 10px 10px;
+}
+
+#ui-datepicker-div td {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000000;
+  margin: 0;
+  border-radius: 5px;
+}
+
+#ui-datepicker-div .ui-datepicker-other-month {
+  border: none;
+}
+
+#ui-datepicker-div a {
+  cursor: pointer;
+  color: #000000;
+}
+
+#ui-datepicker-div span {
+  font-size: 14px;
+  padding: 2px;
+  color: #000000;
+}
+
+.cnt {
+  width: 100%;
+}
+
+.cnt .cnt-room {
+  width: 900px;
+  margin: 150px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.cnt .cnt-room .name {
+  position: absolute;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cnt .cnt-room .name a {
+  color: #000000;
+  font-size: 22px;
+}
+
+.cnt .cnt-room .name h4 {
+  font-size: 24px;
+  margin-left: 30px;
+  font-weight: normal;
+}
+
+.cnt .cnt-room .name h4::before {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #000000;
+  opacity: .3;
+  position: absolute;
+  left: 38px;
+  top: 7px;
+}
+
+.cnt .cnt-room .slideshow-container {
+  width: 600px;
+  position: relative;
+}
+
+.cnt .cnt-room .slideshow-container .pref,
+.cnt .cnt-room .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.cnt .cnt-room .slideshow-container .next {
+  right: 0;
+}
+
+.cnt .cnt-room .slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cnt .cnt-room .date-box {
+  width: 270px;
+  border: 1px solid #000000;
+}
+
+.cnt .cnt-room .date-box .room-price {
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-left: 1px solid #000000;
+}
+
+.cnt .cnt-room .date-box .room-price h5 {
+  margin: 5px 0 5px 15px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.cnt .cnt-room .date-box .room-price h4 {
+  margin: 5px 0 5px 15px;
+  color: #000000;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.cnt .cnt-room .date-box form {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.cnt .cnt-room .date-box form input {
+  padding: 10px 35px;
+  text-align: center;
+  outline: none;
+}
+
+.cnt .cnt-room .date-box form button {
+  margin-top: 30px;
+  padding: 15px 44px;
+  color: #ffffff;
+  background: #000000;
+  font-size: 18px;
+}
+
+.cnt .cnt-room-info {
+  width: 540px;
+  margin: 50px 0 0 190px;
+}
+
+.cnt .cnt-room-info .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.cnt .cnt-room-info .option h4 {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.cnt .cnt-room-info .option p {
+  font-size: 13px;
+}
+
+.cnt .cnt-room-info .option .icons p {
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cnt .cnt-room-info .option .icons p i {
+  margin-right: 12px;
+  color: #8b8888;
+}
+
+.cnt .cnt-room-info .option a {
+  color: #000000;
+  font-size: 15px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.cnt .contact {
+  background: whitesmoke;
+  width: 100%;
+  padding-top: 90px;
+}
+
+.cnt .contact .contact-form {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cnt .contact .contact-form h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cnt .contact .contact-form .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cnt .contact .contact-form .contact-info .text {
+  font-family: italic;
+  color: #000000;
+  opacity: .5;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.cnt .contact .contact-form .contact-info .text::after {
+  content: '/';
+  margin-left: 70px;
+  position: absolute;
+}
+
+.cnt .contact .contact-form .contact-info .text:last-child::after {
+  content: '';
+}
+
+.cnt .contact .contact-form form {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.cnt .contact .contact-form form input {
+  width: 250px;
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+}
+
+.cnt .contact .contact-form form input::-webkit-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form input:-ms-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form input::-ms-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form input::placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form textarea {
+  width: 535px;
+  padding: 10px 15px;
+  height: 150px;
+  border: none;
+  font-size: 18px;
+  margin-top: 20px;
+  resize: none;
+}
+
+.cnt .contact .contact-form form textarea::-webkit-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form textarea:-ms-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form textarea::-ms-input-placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form textarea::placeholder {
+  padding: 8px;
+}
+
+.cnt .contact .contact-form form .field-block {
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.cnt .contact .contact-form form .field-block input {
+  width: 30px;
+}
+
+.cnt .contact .contact-form form .field-block .check-text {
+  font-size: 14px;
+  color: #000000;
+}
+
+.cnt .contact .contact-form form button {
+  width: 565px;
+  border: none;
+  padding: 10px 5px;
+  color: #ffffff;
+  background: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=room.css.map */

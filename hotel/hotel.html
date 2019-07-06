@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/hotel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#datepicke").datepicker();
+        });
+    </script>
+    <title>HOTEL</title>
+</head>
+
+<body>
+    <div class="social">
+        <ul>
+            <li><a target="_blank" href="https://www.vk.com"><i class="fab fa-vk fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.tripadvisor.ru/"><i class="fab fa-tripadvisor fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#hotel">Hotel</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#walks">to go</a></li>
+                <li><a href="#contact">contacts</a></li>
+                <li><a href="./to book/booking.html">to book</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cnt">
+        <section id="main" class="main">
+            <div class="main-cnt">
+                <h1>name the hotel</h1>
+                <span>Mini-Hotel</span>
+                <div class="main-cnt-bg"></div>
+            </div>
+        </section>
+
+
+
+        <section id="hotel" class="hotel">
+            <form action="">
+                <input type="text" required id="datepicker" autocomplete="off" placeholder="Заезд">
+                <input type="text" required id="datepicke" autocomplete="off" placeholder="Выезд">
+                <input type="number" required id="number" autocomplete="off" placeholder="Man">
+                <input type="number" required id="number" autocomplete="off" placeholder="Children">
+                <button>choose a room</button>
+            </form>
+
+            <div class="hotel-info">
+                <h4>Mini-hotel</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatem. Vel, architecto. Sit
+                    possimus quis, reprehenderit, porro vitae, distinctio labore cupiditate error odit laudantium hic
+                    rem ab adipisci facere doloribus.
+                    
+                </p>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms">
+            <div class="rooms-bg">
+                <div class="rooms-info">
+                    <h4>rooms</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda consectetur sint magnam?</p>
+                    <a href="./to book/booking.html">to book</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="service" class="service">
+            <h4>Services</h4>
+            <div class="service-box">
+                <i class="fas fa-coffee fa-2x"></i>
+                <h5>Breakfast</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-umbrella-beach fa-2x"></i>
+                <h5>Beach</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-swimming-pool fa-2x"></i>
+                <h5>Pool</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-wifi fa-2x"></i></i>
+                <h5>Free Wi-Fi</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-tshirt fa-2x"></i>
+                <h5>Daily Cleaning</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-concierge-bell fa-2x"></i>
+                <h5>Dinner in the room</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+
+            <div class="slider">
+                <h4>GALLERY</h4>
+                <slider>
+                    <slide>
+
+                    </slide>
+                    <slide>
+                    </slide>
+                    <slide>
+                    </slide>
+                    <slide>
+                    </slide>
+                </slider>
+            </div>
+
+        </section>
+
+        <section id="walks" class="walks">
+            <h4>where to go</h4>
+            <div class="walks-box">
+                <h5>Wine festival</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="walks-box">
+                <h5>Opera</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="walks-box">
+                <h5>Market</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="walks-box">
+                <h5>History Museum</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="walks-box">
+                <h5>Zoo</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+            <div class="walks-box">
+                <h5>Racetrack</h5>
+                <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+
+            <div class="contact-form">
+                <h4>contact us</h4>
+                <div class="contact-info">
+                    <a class="text" href="#">info@mysite.com</a>
+                    <span class="text">Ул.Арбат, 1а, Москва, 119019, Россия</span>
+                    <span class="text">+79031500000</span>
+                </div>
+                <form id="contactForm" action="" method="post">
+                    <input id="name" class="field" name="name" required type="text" placeholder="Name *">
+                    <input id="email" class="field" name="email" required type="email" placeholder="Email *">
+                    <textarea id="message" class="field" name="message" rows="4" placeholder="Messeges"></textarea>
+                    <div class="field-block">
+                        <input id="check" name="check" checked type="checkbox">
+                        <span class="check-text">I voluntarily send my details</span>
+                    </div>
+                    <button id="button" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5dba33352fe3735d04486f5b775f9d31c04a98fe60b748c431da165708b34877&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </section>
+    </div>
+</body>
+
+</html>
